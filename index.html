@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PakJobs - Pakistan's Leading Job Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Header with Pakistan Theme -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-briefcase"></i>
+                        <div class="pak-flag">
+                            <span class="green"></span>
+                            <span class="white"></span>
+                            <span class="crescent">🌙</span>
+                        </div>
+                    </div>
+                    <span class="logo-text">PakJobs</span>
+                </div>
+
+                <button class="mobile-menu" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#jobs" class="nav-link">Find Jobs</a></li>
+                        <li><a href="#companies" class="nav-link">Companies</a></li>
+                        <li><a href="#govt-jobs" class="nav-link">Govt Jobs</a></li>
+                        <li><a href="#overseas" class="nav-link">Overseas</a></li>
+                        <li><a href="#career-resources" class="nav-link">Career Resources</a></li>
+                    </ul>
+                </nav>
+
+                <div class="auth-buttons">
+                    <button class="btn btn-outline" id="loginBtn">Login</button>
+                    <button class="btn btn-primary" id="registerBtn">Register</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Pakistan Theme -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Find Your Dream Job in Pakistan</h1>
+                    <p class="hero-subtitle">Join 6+ million professionals and connect with 50,000+ top employers across
+                        Pakistan</p>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">50K+</span>
+                            <span class="stat-label">Companies</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">200K+</span>
+                            <span class="stat-label">Live Jobs</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">6M+</span>
+                            <span class="stat-label">Professionals</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-container">
+                    <div class="search-card">
+                        <h3>Search from 200,000+ Jobs in Pakistan</h3>
+                        <div class="search-bar">
+                            <div class="search-input-group">
+                                <i class="fas fa-search"></i>
+                                <input type="text" id="jobSearch" placeholder="Job title, skills, or company">
+                            </div>
+                            <div class="search-input-group">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <select id="locationSearch" class="location-select">
+                                    <option value="">All Pakistan</option>
+                                    <option value="Karachi">Karachi</option>
+                                    <option value="Lahore">Lahore</option>
+                                    <option value="Islamabad">Islamabad</option>
+                                    <option value="Rawalpindi">Rawalpindi</option>
+                                    <option value="Faisalabad">Faisalabad</option>
+                                    <option value="Peshawar">Peshawar</option>
+                                    <option value="Multan">Multan</option>
+                                    <option value="Hyderabad">Hyderabad</option>
+                                    <option value="Quetta">Quetta</option>
+                                    <option value="Remote">Work from Home</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary search-btn" id="searchBtn">
+                                <i class="fas fa-search"></i> Search Jobs
+                            </button>
+                        </div>
+
+                        <div class="popular-searches">
+                            <span>Popular Searches: </span>
+                            <div class="popular-tags">
+                                <span class="popular-tag" data-search="software engineer">Software Engineer</span>
+                                <span class="popular-tag" data-search="accountant">Accountant</span>
+                                <span class="popular-tag" data-search="marketing">Marketing</span>
+                                <span class="popular-tag" data-search="teacher">Teacher</span>
+                                <span class="popular-tag" data-search="government">Government Jobs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Categories -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Browse Jobs by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>IT & Software</h3>
+                    <span class="job-count">25,342 jobs</span>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Business & Marketing</h3>
+                    <span class="job-count">18,765 jobs</span>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-university"></i>
+                    <h3>Government Jobs</h3>
+                    <span class="job-count">12,543 jobs</span>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Education</h3>
+                    <span class="job-count">15,678 jobs</span>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>Healthcare</h3>
+                    <span class="job-count">9,876 jobs</span>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-plane"></i>
+                    <h3>Overseas Jobs</h3>
+                    <span class="job-count">8,432 jobs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Jobs Section -->
+    <section class="jobs-section" id="jobs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Jobs in Pakistan</h2>
+                <p>Latest opportunities from top companies</p>
+            </div>
+
+            <div class="filters-container">
+                <div class="job-filters">
+                    <select class="filter-select" id="categoryFilter">
+                        <option value="">All Categories</option>
+                        <option value="IT & Software">IT & Software</option>
+                        <option value="Business & Marketing">Business & Marketing</option>
+                        <option value="Government">Government Jobs</option>
+                        <option value="Education">Education</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Finance">Finance</option>
+                    </select>
+
+                    <select class="filter-select" id="cityFilter">
+                        <option value="">All Cities</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Lahore">Lahore</option>
+                        <option value="Islamabad">Islamabad</option>
+                        <option value="Rawalpindi">Rawalpindi</option>
+                        <option value="Faisalabad">Faisalabad</option>
+                        <option value="Remote">Work from Home</option>
+                    </select>
+
+                    <select class="filter-select" id="experienceFilter">
+                        <option value="">Experience Level</option>
+                        <option value="Fresh">Fresh</option>
+                        <option value="1-2 years">1-2 years</option>
+                        <option value="3-5 years">3-5 years</option>
+                        <option value="5+ years">5+ years</option>
+                    </select>
+
+                    <select class="filter-select" id="salaryFilter">
+                        <option value="">Salary Range</option>
+                        <option value="0-30000">Up to 30,000 PKR</option>
+                        <option value="30000-60000">30,000 - 60,000 PKR</option>
+                        <option value="60000-100000">60,000 - 100,000 PKR</option>
+                        <option value="100000+">100,000+ PKR</option>
+                    </select>
+
+                    <button class="btn btn-outline" id="clearFilters">Clear Filters</button>
+                </div>
+            </div>
+
+            <div class="job-grid" id="jobListings">
+                <!-- Jobs will be loaded here dynamically -->
+            </div>
+
+            <div class="load-more-container">
+                <button class="btn btn-primary" id="loadMoreJobs">
+                    <i class="fas fa-redo"></i> Load More Jobs
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Government Jobs Section -->
+    <section class="govt-jobs-section" id="govt-jobs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Government Jobs 2024</h2>
+                <p>Federal and Provincial Government Opportunities</p>
+            </div>
+
+            <div class="govt-jobs-grid">
+                <div class="govt-job-card">
+                    <div class="govt-badge">Federal</div>
+                    <h3>Assistant Director</h3>
+                    <p>Federal Board of Revenue</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Islamabad</span>
+                        <span><i class="fas fa-calendar"></i> Last Date: 15 Dec 2024</span>
+                    </div>
+                    <button class="btn btn-primary">Apply Now</button>
+                </div>
+
+                <div class="govt-job-card">
+                    <div class="govt-badge">Punjab</div>
+                    <h3>Secondary School Teacher</h3>
+                    <p>Punjab Education Department</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Lahore</span>
+                        <span><i class="fas fa-calendar"></i> Last Date: 20 Dec 2024</span>
+                    </div>
+                    <button class="btn btn-primary">Apply Now</button>
+                </div>
+
+                <div class="govt-job-card">
+                    <div class="govt-badge">Sindh</div>
+                    <h3>Staff Nurse</h3>
+                    <p>Sindh Health Department</p>
+                    <div class="job-details">
+                        <span><i class="fas fa-map-marker-alt"></i> Karachi</span>
+                        <span><i class="fas fa-calendar"></i> Last Date: 10 Dec 2024</span>
+                    </div>
+                    <button class="btn btn-primary">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Companies Section -->
+    <section class="companies-section" id="companies">
+        <div class="container">
+            <div class="section-header">
+                <h2>Top Companies Hiring in Pakistan</h2>
+                <p>Join leading organizations across the country</p>
+            </div>
+
+            <div class="companies-grid">
+                <div class="company-card">
+                    <div class="company-logo">Systems</div>
+                    <h3>Systems Limited</h3>
+                    <p>IT & Software</p>
+                    <span class="job-count">245 open positions</span>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-logo">UBL</div>
+                    <h3>United Bank Limited</h3>
+                    <p>Banking & Finance</p>
+                    <span class="job-count">89 open positions</span>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-logo">PTCL</div>
+                    <h3>PTCL</h3>
+                    <p>Telecommunications</p>
+                    <span class="job-count">67 open positions</span>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-logo">Engro</div>
+                    <h3>Engro Corporation</h3>
+                    <p>Manufacturing</p>
+                    <span class="job-count">34 open positions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Resources Section -->
+    <section class="resources-section" id="career-resources">
+        <div class="container">
+            <div class="section-header">
+                <h2>Career Resources</h2>
+                <p>Tools and guidance for your career growth</p>
+            </div>
+
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>CV Making Service</h3>
+                    <p>Professional CV writing by experts</p>
+                    <button class="btn btn-outline">Get Started</button>
+                </div>
+
+                <div class="resource-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Career Counseling</h3>
+                    <p>Get expert career guidance</p>
+                    <button class="btn btn-outline">Book Session</button>
+                </div>
+
+                <div class="resource-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Learning Resources</h3>
+                    <p>Free courses and tutorials</p>
+                    <button class="btn btn-outline">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Employers Section -->
+    <section class="employers-section">
+        <div class="container">
+            <div class="employers-content">
+                <div class="employers-text">
+                    <h2>Hire the Best Talent in Pakistan</h2>
+                    <p>Join 50,000+ companies using PakJobs to find qualified candidates</p>
+                    <ul class="employer-benefits">
+                        <li><i class="fas fa-check"></i> Access to 6+ million professionals</li>
+                        <li><i class="fas fa-check"></i> Advanced recruitment tools</li>
+                        <li><i class="fas fa-check"></i> Targeted job postings</li>
+                        <li><i class="fas fa-check"></i> Affordable packages for SMEs</li>
+                    </ul>
+                    <button class="btn btn-primary" id="postJobBtn">
+                        <i class="fas fa-plus"></i> Post a Job - Start Hiring
+                    </button>
+                </div>
+
+                <div class="employers-stats">
+                    <div class="employer-stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Companies</span>
+                    </div>
+                    <div class="employer-stat">
+                        <span class="stat-number">6M+</span>
+                        <span class="stat-label">Professionals</span>
+                    </div>
+                    <div class="employer-stat">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Satisfaction Rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authentication Modals -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Welcome to PakJobs</h2>
+                <p>Login to your account</p>
+            </div>
+
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="loginEmail" class="form-control" placeholder="Enter your email"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="loginPassword" class="form-control" placeholder="Enter your password"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="rememberMe">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block login-submit">
+                    <span class="btn-text">Login to PakJobs</span>
+                    <div class="btn-loader" style="display: none;">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </div>
+                </button>
+            </form>
+
+            <div class="auth-switch">
+                <p>Don't have an account? <a href="#" id="switchToRegister">Create Account</a></p>
+            </div>
+
+            <button class="btn-close" id="closeLoginModal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Join PakJobs Today</h2>
+                <p>Create your free account</p>
+            </div>
+
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label for="userType">I am a</label>
+                    <div class="user-type-selector">
+                        <label class="radio-label">
+                            <input type="radio" name="userType" value="candidate" checked>
+                            <span class="radio-custom"></span>
+                            <div class="radio-content">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>Job Seeker</span>
+                            </div>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="userType" value="employer">
+                            <span class="radio-custom"></span>
+                            <div class="radio-content">
+                                <i class="fas fa-building"></i>
+                                <span>Employer</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="registerName">Full Name</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="registerName" class="form-control" placeholder="Enter your full name"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="registerEmail">Email Address</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="registerEmail" class="form-control" placeholder="Enter your email"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="registerPassword" class="form-control"
+                            placeholder="Create a password" required minlength="6">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="confirmPassword" class="form-control"
+                            placeholder="Confirm your password" required>
+                    </div>
+                </div>
+
+                <div class="form-agreement">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="agreeTerms" required>
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block register-submit">
+                    <span class="btn-text">Create Free Account</span>
+                    <div class="btn-loader" style="display: none;">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </div>
+                </button>
+            </form>
+
+            <div class="auth-switch">
+                <p>Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+            </div>
+
+            <button class="btn-close" id="closeRegisterModal">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-briefcase"></i>
+                        <span>PakJobs</span>
+                    </div>
+                    <p class="footer-description">
+                        Pakistan's leading job portal connecting talent with opportunity. Find your dream job or the
+                        perfect candidate with our platform.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>For Job Seekers</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Browse Jobs</a></li>
+                        <li><a href="#">Government Jobs</a></li>
+                        <li><a href="#">Overseas Jobs</a></li>
+                        <li><a href="#">CV Making Service</a></li>
+                        <li><a href="#">Career Counseling</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>For Employers</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Post a Job</a></li>
+                        <li><a href="#">Browse Candidates</a></li>
+                        <li><a href="#">Pricing Plans</a></li>
+                        <li><a href="#">Employer Resources</a></li>
+                        <li><a href="#">Recruitment Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Popular Cities</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Jobs in Karachi</a></li>
+                        <li><a href="#">Jobs in Lahore</a></li>
+                        <li><a href="#">Jobs in Islamabad</a></li>
+                        <li><a href="#">Jobs in Rawalpindi</a></li>
+                        <li><a href="#">Jobs in Faisalabad</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Main Office: Karachi, Pakistan</p>
+                        <p><i class="fas fa-phone"></i> +92-21-1234567</p>
+                        <p><i class="fas fa-envelope"></i> info@pakjobs.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 PakJobs - Pakistan's Leading Job Portal. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Notification Container -->
+    <div id="notificationContainer" class="notification-container"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
