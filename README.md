@@ -1,20 +1,20 @@
-# 💼 Job Portal Website
+# 💼 PakJobs – Job Portal Website
 
-A responsive job portal frontend designed to help users explore job opportunities through a clear layout and interactive interface.
-
+A responsive job portal frontend designed to help users explore job opportunities across Pakistan through a clear layout and user-friendly interface.
 
 ## 🌐 Live Demo
 
 [Open the deployed website](https://job-portal-website1-nine.vercel.app)
 
-
 ## ✨ Project Highlights
 
 - Job portal landing page
-- Job-search and recruitment theme
+- Job-search and recruitment interface
+- Search form with job title and location fields
+- Job categories and career resources navigation
+- Login and registration entry points
 - Responsive page layout
 - Interactive elements implemented with JavaScript
-- Custom styling with CSS
 
 ## 🧰 Tech Stack
 
@@ -22,18 +22,25 @@ A responsive job portal frontend designed to help users explore job opportunitie
 - CSS3
 - JavaScript
 
+## 📸 Website Preview
+
+![PakJobs job portal homepage](screenshots/pakjobs-home.webp)
+
 ## 📁 Project Files
 
 - `index.html` — main page structure
 - `style.css` — page styling and responsive presentation
 - `scripts.js` — interactive behavior
+- `screenshots/pakjobs-home.webp` — homepage screenshot
 
 ## ▶️ Run Locally
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/syedanoorfatima/Job-Portal-Website1.git
    ```
+
 2. Open the project folder.
 3. Open `index.html` in your browser, or use a local development server.
 
@@ -44,9 +51,5 @@ A responsive job portal frontend designed to help users explore job opportunitie
 [GitHub](https://github.com/syedanoorfatima) · [LinkedIn](https://www.linkedin.com/in/syeda-noor-fatima-webdeveloper)
 
 ---
+
 *Created as a web-development learning and portfolio project.*
-
-
-## 📸 Screenshots
-
-Screenshots are not yet included in this repository README. Add genuine screenshots of the running project in a `screenshots/` folder and link them here so visitors can preview the actual interface.
