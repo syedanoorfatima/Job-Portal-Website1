@@ -2,6 +2,12 @@
 
 A responsive job portal frontend designed to help users explore job opportunities through a clear layout and interactive interface.
 
+
+## 🌐 Live Demo
+
+[Open the deployed website](https://job-portal-website1-nine.vercel.app)
+
+
 ## ✨ Project Highlights
 
 - Job portal landing page
@@ -39,3 +45,8 @@ A responsive job portal frontend designed to help users explore job opportunitie
 
 ---
 *Created as a web-development learning and portfolio project.*
+
+
+## 📸 Screenshots
+
+Screenshots are not yet included in this repository README. Add genuine screenshots of the running project in a `screenshots/` folder and link them here so visitors can preview the actual interface.
